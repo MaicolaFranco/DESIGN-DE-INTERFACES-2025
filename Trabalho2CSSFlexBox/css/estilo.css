@@ -1,0 +1,137 @@
+/* Reset e geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Roboto', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo e banner */
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.banner {
+    height: 60px;
+    width: auto;
+}
+
+/* Menu */
+.menu-principal ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-principal ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-principal ul li a:hover {
+    color: #00ccff;
+}
+
+/* Sessão 1 */
+.img-principal {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    background-image: url('../img/Componentes.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sessao1 {
+    padding: 40px 10px; /* padding vertical e lateral base */
+    text-align: justify; /* justifica textos e títulos */
+}
+
+#sessao1 h2 {
+    font-size: 2rem; /* título maior */
+    margin-bottom: 20px;
+}
+
+#sessao1 p {
+    font-size: 1.2rem; /* aumenta o tamanho do texto */
+    line-height: 1.6;  /* melhora leitura */
+    max-width: 80vw;  /* largura máxima para centralizar melhor */
+    margin: 0 auto 15px; /* centraliza horizontalmente e espaçamento entre parágrafos */
+    padding: 0 20px; /* padding lateral para "respirar" */
+}
+
+
+.boxImgs1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.boxImgs1 div {
+    display: flex;
+    flex-direction: column; /* organiza imagem e legenda verticalmente */
+    align-items: center;    /* centraliza conteúdo dentro do div */
+}
+
+.boxImgs1 div img {
+    width: 200px;       /* largura fixa */
+    height: 200px;      /* altura fixa */
+    object-fit: cover;  /* mantém proporção, corta se necessário */
+    display: block;
+}
+
+
+/* Sessão 2 - Galeria */
+.galeria-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: calc(50% - 10px);
+    max-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+/* Voltar ao topo */
+.voltar-topo:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
