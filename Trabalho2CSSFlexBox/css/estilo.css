@@ -56,21 +56,21 @@ header {
 }
 
 #sessao1 {
-    padding: 40px 10px; /* padding vertical e lateral base */
-    text-align: justify; /* justifica textos e títulos */
+    padding: 40px 10px; 
+    text-align: justify; 
 }
 
 #sessao1 h2 {
-    font-size: 2rem; /* título maior */
+    font-size: 2rem; 
     margin-bottom: 20px;
 }
 
 #sessao1 p {
-    font-size: 1.2rem; /* aumenta o tamanho do texto */
-    line-height: 1.6;  /* melhora leitura */
-    max-width: 80vw;  /* largura máxima para centralizar melhor */
-    margin: 0 auto 15px; /* centraliza horizontalmente e espaçamento entre parágrafos */
-    padding: 0 20px; /* padding lateral para "respirar" */
+    font-size: 1.2rem; 
+    line-height: 1.6;  
+    max-width: 80vw;  
+    margin: 0 auto 15px; 
+    padding: 0 20px; 
 }
 
 
@@ -83,14 +83,14 @@ header {
 
 .boxImgs1 div {
     display: flex;
-    flex-direction: column; /* organiza imagem e legenda verticalmente */
-    align-items: center;    /* centraliza conteúdo dentro do div */
+    flex-direction: column; 
+    align-items: center;    
 }
 
 .boxImgs1 div img {
-    width: 200px;       /* largura fixa */
-    height: 200px;      /* altura fixa */
-    object-fit: cover;  /* mantém proporção, corta se necessário */
+    width: 200px;       
+    height: 200px;      
+    object-fit: cover;  
     display: block;
 }
 
