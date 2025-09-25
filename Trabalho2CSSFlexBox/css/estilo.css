@@ -73,15 +73,13 @@ section {
     border-radius: 15px;
     overflow: hidden;
     height: 400px;
+
+    background-image: url("../img/Componentes.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.img-principal img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
 
 section p, section h2 {
     max-width: 900px;
