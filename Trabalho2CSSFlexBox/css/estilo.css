@@ -157,7 +157,7 @@ section p, section h2 {
 
 /* Footer */
 .footer {
-    background: rgb(30, 40, 76);
+    background-color: rgb(30, 40, 76);
     color: #fff;
     text-align: center;
     padding: 1.5rem;
