@@ -27,10 +27,10 @@
   <header class="header" id="topo">
     <div class="header-inner">
       <div class="logo">
-        <img src="img/Logo.png" alt="Logo do site">
+        <img src="img/Logo.png" alt="Logo do site" decoding="async">
       </div>
       <div class="banner">
-        <img src="img/Banner.png" alt="Banner do site">
+        <img src="img/Banner.png" alt="Banner do site" decoding="async" loading="lazy">
       </div>
     </div>
   </header>
@@ -50,11 +50,11 @@
     <section id="sessao1">
       <h2 class="text-center mb-3">Bem-vindo à TechParts</h2>
 
-      <!-- Imagem principal responsiva -->
+      <!-- Imagem principal responsiva - prioridade de carregamento -->
       <picture class="img-principal">
         <source srcset="img/componentes-grande.webp" media="(min-width: 1025px)">
         <source srcset="img/componentes-medio.webp" media="(min-width: 601px)">
-        <img src="img/componentes-pequeno.webp" alt="Componentes eletrônicos" loading="lazy">
+        <img src="img/componentes-pequeno.webp" alt="Componentes eletrônicos">
       </picture>
 
       <p>
@@ -70,11 +70,11 @@
 
       <div class="boxImgs1">
         <div>
-          <img src="img/ArduinoSessao1.png" alt="Placa Arduino">
+          <img src="img/ArduinoSessao1.png" alt="Placa Arduino" loading="lazy" decoding="async">
           <p>Placas Arduino para seus projetos</p>
         </div>
         <div>
-          <img src="img/ProtoboardSessao1.png" alt="Protoboard">
+          <img src="img/ProtoboardSessao1.png" alt="Protoboard" loading="lazy" decoding="async">
           <p>Protoboards para prototipagem rápida</p>
         </div>
       </div>
@@ -89,27 +89,27 @@
       <div class="container-galeria">
         <div class="galeria-produtos">
           <div class="card">
-            <img src="img/Resistores.png" alt="Resistores">
+            <img src="img/Resistores.png" alt="Resistores" loading="lazy" decoding="async">
             <p>Resistores diversos valores</p>
           </div>
           <div class="card">
-            <img src="img/Capacitadores.png" alt="Capacitores">
+            <img src="img/Capacitadores.png" alt="Capacitores" loading="lazy" decoding="async">
             <p>Capacitores variados</p>
           </div>
           <div class="card">
-            <img src="img/Leds.png" alt="LEDs">
+            <img src="img/Leds.png" alt="LEDs" loading="lazy" decoding="async">
             <p>LEDs coloridos</p>
           </div>
           <div class="card">
-            <img src="img/Arduinos.png" alt="Placas Arduino">
+            <img src="img/Arduinos.png" alt="Placas Arduino" loading="lazy" decoding="async">
             <p>Placas Arduino</p>
           </div>
           <div class="card">
-            <img src="img/Protoboards.png" alt="Protoboards">
+            <img src="img/Protoboards.png" alt="Protoboards" loading="lazy" decoding="async">
             <p>Protoboards de vários tamanhos</p>
           </div>
           <div class="card">
-            <img src="img/Sensores.png" alt="Sensores">
+            <img src="img/Sensores.png" alt="Sensores" loading="lazy" decoding="async">
             <p>Sensores diversos</p>
           </div>
         </div>
@@ -157,12 +157,12 @@
       <h2 class="text-center mb-3">Painel de Componentes</h2>
 
       <div class="grid">
-        <div class="foto foto1"></div>
-        <div class="foto foto2"></div>
-        <div class="foto foto3"></div>
-        <div class="foto foto4"></div>
-        <div class="foto foto5"></div>
-        <div class="foto foto6"></div>
+        <div class="foto foto1" loading="lazy" decoding="async"></div>
+        <div class="foto foto2" loading="lazy" decoding="async"></div>
+        <div class="foto foto3" loading="lazy" decoding="async"></div>
+        <div class="foto foto4" loading="lazy" decoding="async"></div>
+        <div class="foto foto5" loading="lazy" decoding="async"></div>
+        <div class="foto foto6" loading="lazy" decoding="async"></div>
       </div>
 
       <a href="#topo" class="voltar-topo d-block text-center text-primary text-decoration-none mt-3">Voltar para o topo</a>
