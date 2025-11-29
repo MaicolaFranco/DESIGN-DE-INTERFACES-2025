@@ -195,6 +195,7 @@ form input {
     }
 }
 
+/* Sessão 4 - Grid de componentes (mosaico) */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -212,9 +213,10 @@ form input {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 200px; /* garante altura mínima visível */
+    min-height: 200px;
 }
 
+/* Caminhos relativos corrigidos para GitHub Pages */
 .foto1 { background-image: url("img/componentes1.webp"); grid-row: span 2; }
 .foto2 { background-image: url("img/componentes2.webp"); }
 .foto3 { background-image: url("img/componentes3.webp"); grid-row: span 2; }
@@ -222,6 +224,7 @@ form input {
 .foto5 { background-image: url("img/componentes5.webp"); }
 .foto6 { background-image: url("img/componentes6.webp"); }
 
+/* Sessão 5 - Carrossel */
 #carouselProdutos {
     width: 100%;
     max-width: 900px;
