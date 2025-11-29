@@ -223,42 +223,23 @@ form input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px;
+  grid-auto-flow: dense;
   gap: 10px;
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
 }
-
 .foto {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
 }
-
-.foto.loaded {
-  opacity: 1;
-}
-
-/* Grid row spans */
-.foto1 { grid-row: span 2; }
-.foto3 { grid-row: span 2; }
-.foto4 { grid-row: span 2; }
-
-/* ===========================
-   Mobile adjustments
-=========================== */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 120px;
-    grid-auto-flow: row; /* remove dense */
-  }
-}
-
-
+.foto1 { background-image: url("/img/componentes1.webp"); grid-row: span 2; }
+.foto2 { background-image: url("/img/componentes2.webp"); }
+.foto3 { background-image: url("/img/componentes3.webp"); grid-row: span 2; }
+.foto4 { background-image: url("/img/componentes4.webp"); grid-row: span 2; }
+.foto5 { background-image: url("/img/componentes5.webp"); }
+.foto6 { background-image: url("/img/componentes6.webp"); }
 
 
 /* ===========================
