@@ -218,22 +218,34 @@ form input {
 .foto5 { background-image: url("/img/componentes5.webp"); }
 .foto6 { background-image: url("/img/componentes6.webp"); }
 
-/* Sessão 5 - Carrossel */
-#carouselProdutos {
-    width: 100%;
-    max-width: 900px;
-}
-
-#carouselProdutos .carousel-item {
-    position: relative;
-    width: 100%;
-    min-height: 250px;
-}
-
+/* Sessão 5 — Carousel */
 #carouselProdutos .carousel-item img {
-    width: 100%;
     height: 260px;
     object-fit: cover;
-    display: block;
     border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: rgb(30, 40, 76); 
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-content p {
+    margin: 0;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+.footer-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-content a:hover {
+    color: #ccc;
 }
