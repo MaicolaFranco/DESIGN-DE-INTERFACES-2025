@@ -64,48 +64,96 @@
 
         <section id="sessao2">
             <h2 class="text-center">Nossos Produtos</h2>
-            <div class="galeria-produtos d-flex flex-wrap justify-content-center gap-3">
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <img src="img/Resistores.png?v=2" alt="Resistores" width="300" height="220" loading="lazy" class="card-img">
-                    <p>Resistores diversos valores</p>
+        
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <picture>
+                                <source srcset="img/Resistores.webp" type="image/webp">
+                                <img src="img/Resistores.png" class="card-img-top" alt="Resistores" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>Resistores diversos valores</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal2">
+                            <picture>
+                                <source srcset="img/Capacitadores.webp" type="image/webp">
+                                <img src="img/Capacitadores.png" class="card-img-top" alt="Capacitores" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>Capacitores variados</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <picture>
+                                <source srcset="img/Leds.webp" type="image/webp">
+                                <img src="img/Leds.png" class="card-img-top" alt="LEDs coloridos" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>LEDs coloridos</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal4">
+                            <picture>
+                                <source srcset="img/Arduinos.webp" type="image/webp">
+                                <img src="img/Arduinos.png" class="card-img-top" alt="Arduinos" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>Placas Arduino</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal5">
+                            <picture>
+                                <source srcset="img/Protoboards.webp" type="image/webp">
+                                <img src="img/Protoboards.png" class="card-img-top" alt="Protoboards" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>Protoboards</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal6">
+                            <picture>
+                                <source srcset="img/Sensores.webp" type="image/webp">
+                                <img src="img/Sensores.png" class="card-img-top" alt="Sensores" width="300" height="220" loading="lazy">
+                            </picture>
+                            <div class="card-body text-center">
+                                <p>Sensores diversos</p>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
-                    <img src="img/Capacitadores.png?v=2" alt="Capacitores" width="300" height="220" loading="lazy" class="card-img">
-                    <p>Capacitores variados</p>
-                </div>
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
-                    <img src="img/Leds.png?v=2" alt="LEDs coloridos" width="300" height="220" loading="lazy" class="card-img">
-                    <p>LEDs coloridos</p>
-                </div>
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
-                    <img src="img/Arduinos.png?v=2" alt="Arduinos" width="300" height="220" loading="lazy" class="card-img">
-                    <p>Placas Arduino</p>
-                </div>
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal5">
-                    <img src="img/Protoboards.png?v=2" alt="Protoboards" width="300" height="220" loading="lazy" class="card-img">
-                    <p>Protoboards</p>
-                </div>
-
-                <div class="card" data-bs-toggle="modal" data-bs-target="#modal6">
-                    <img src="img/Sensores.png?v=2" alt="Sensores" width="300" height="220" loading="lazy" class="card-img">
-                    <p>Sensores diversos</p>
-                </div>
-
             </div>
         
-            <div class="text-center mt-2">
+            <div class="text-center mt-3">
                 <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
             </div>
         
             <div class="modal fade" id="modal1" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Resistores.png?v=2" class="w-100" alt="Imagem ampliada de resistores">
+                        <picture>
+                            <source srcset="img/Resistores.webp" type="image/webp">
+                            <img src="img/Resistores.png" class="w-100" alt="Imagem ampliada de resistores">
+                        </picture>
                         <div class="p-3"><p>Resistores usados para limitar corrente elétrica em circuitos...</p></div>
                     </div>
                 </div>
@@ -114,8 +162,11 @@
             <div class="modal fade" id="modal2" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Capacitadores.png?v=2" class="w-100" alt="Imagem ampliada de capacitores">
-                        <div class="p-3"><p>Capacitores para filtragem, armazenamento de energia e acoplamento de sinais.</p></div>
+                        <picture>
+                            <source srcset="img/Capacitadores.webp" type="image/webp">
+                            <img src="img/Capacitadores.png" class="w-100" alt="Imagem ampliada de capacitores">
+                        </picture>
+                        <div class="p-3"><p>Capacitores para filtragem e acoplamento de sinais.</p></div>
                     </div>
                 </div>
             </div>
@@ -123,8 +174,11 @@
             <div class="modal fade" id="modal3" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Leds.png?v=2" class="w-100" alt="Imagem ampliada de LEDs">
-                        <div class="p-3"><p>LEDs variados, de diversas cores e intensidades para projetos eletrônicos.</p></div>
+                        <picture>
+                            <source srcset="img/Leds.webp" type="image/webp">
+                            <img src="img/Leds.png" class="w-100" alt="Imagem ampliada de LEDs">
+                        </picture>
+                        <div class="p-3"><p>LEDs variados para projetos eletrônicos.</p></div>
                     </div>
                 </div>
             </div>
@@ -132,8 +186,11 @@
             <div class="modal fade" id="modal4" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Arduinos.png?v=2" class="w-100" alt="Imagem ampliada de Arduinos">
-                        <div class="p-3"><p>Placas Arduino para seus projetos e prototipagem rápida.</p></div>
+                        <picture>
+                            <source srcset="img/Arduinos.webp" type="image/webp">
+                            <img src="img/Arduinos.png" class="w-100" alt="Imagem ampliada de Arduinos">
+                        </picture>
+                        <div class="p-3"><p>Placas Arduino para prototipagem rápida.</p></div>
                     </div>
                 </div>
             </div>
@@ -141,8 +198,11 @@
             <div class="modal fade" id="modal5" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Protoboards.png?v=2" class="w-100" alt="Imagem ampliada de Protoboards">
-                        <div class="p-3"><p>Protoboards para testes rápidos e desenvolvimento de circuitos.</p></div>
+                        <picture>
+                            <source srcset="img/Protoboards.webp" type="image/webp">
+                            <img src="img/Protoboards.png" class="w-100" alt="Imagem ampliada de Protoboards">
+                        </picture>
+                        <div class="p-3"><p>Protoboards para desenvolvimento de circuitos.</p></div>
                     </div>
                 </div>
             </div>
@@ -150,12 +210,16 @@
             <div class="modal fade" id="modal6" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="img/Sensores.png?v=2" class="w-100" alt="Imagem ampliada de Sensores">
-                        <div class="p-3"><p>Sensores diversos para medir temperatura, distância, luz e outros parâmetros.</p></div>
+                        <picture>
+                            <source srcset="img/Sensores.webp" type="image/webp">
+                            <img src="img/Sensores.png" class="w-100" alt="Imagem ampliada de Sensores">
+                        </picture>
+                        <div class="p-3"><p>Sensores diversos para seus projetos.</p></div>
                     </div>
                 </div>
             </div>
         </section>
+
 
 
         <section id="sessao3" class="formulario-section">
