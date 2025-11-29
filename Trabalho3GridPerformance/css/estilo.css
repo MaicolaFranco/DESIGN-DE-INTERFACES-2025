@@ -217,7 +217,7 @@ form input {
 }
 
 /* ===========================
-   SESSÃO 4 – PAINEL DE COMPONENTES / MOSAICO
+   SESSÃO 4 – MOSAICO 
 =========================== */
 .grid {
     display: grid;
@@ -232,22 +232,28 @@ form input {
 .foto {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: block;
     border-radius: 10px;
-    min-height: 150px; /* garante que a div tenha altura mínima */
+    object-fit: cover;
+    background-color: #f0f0f0; 
 }
 
-/* Mosaico com span */
-.foto1 { background-image: url("../img/componentes1.webp"); grid-row: span 2; }
-.foto2 { background-image: url("../img/componentes2.webp"); }
-.foto3 { background-image: url("../img/componentes3.webp"); grid-row: span 2; }
-.foto4 { background-image: url("../img/componentes4.webp"); grid-row: span 2; }
-.foto5 { background-image: url("../img/componentes5.webp"); }
-.foto6 { background-image: url("../img/componentes6.webp"); }
 
-/* RESPONSIVO */
+.foto1 { grid-row: span 2; }
+.foto2 { grid-row: span 1; }
+.foto3 { grid-row: span 2; }
+.foto4 { grid-row: span 2; }
+.foto5 { grid-row: span 1; }
+.foto6 { grid-row: span 1; }
+
+
+.foto1::before { content: url("../img/componentes1.webp"); display: block; width: 100%; height: 100%; }
+.foto2::before { content: url("../img/componentes2.webp"); display: block; width: 100%; height: 100%; }
+.foto3::before { content: url("../img/componentes3.webp"); display: block; width: 100%; height: 100%; }
+.foto4::before { content: url("../img/componentes4.webp"); display: block; width: 100%; height: 100%; }
+.foto5::before { content: url("../img/componentes5.webp"); display: block; width: 100%; height: 100%; }
+.foto6::before { content: url("../img/componentes6.webp"); display: block; width: 100%; height: 100%; }
+
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -261,8 +267,9 @@ form input {
         grid-template-columns: 1fr;
         grid-auto-rows: 180px;
     }
-    .foto1, .foto3, .foto4 { grid-row: span 1; } /* ajusta span para mobile */
+    .foto1, .foto3, .foto4 { grid-row: span 1; }
 }
+
 /* ===========================
    SESSÃO 5 – CARROSSEL
 =========================== */
