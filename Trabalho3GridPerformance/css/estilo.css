@@ -209,20 +209,15 @@ form input {
 
 .foto {
     width: 100%;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-/* Caminhos relativos corrigidos para GitHub Pages */
-.foto1 { background-image: url("img/componentes1.webp"); grid-row: span 2; }
-.foto2 { background-image: url("img/componentes2.webp"); }
-.foto3 { background-image: url("img/componentes3.webp"); grid-row: span 2; }
-.foto4 { background-image: url("img/componentes4.webp"); grid-row: span 2; }
-.foto5 { background-image: url("img/componentes5.webp"); }
-.foto6 { background-image: url("img/componentes6.webp"); }
+/* Para fazer algumas imagens maiores (como antes) */
+.foto1 { grid-row: span 2; }
+.foto3 { grid-row: span 2; }
+.foto4 { grid-row: span 2; }
 
 /* Sessão 5 - Carrossel */
 #carouselProdutos {
