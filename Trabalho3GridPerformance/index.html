@@ -15,13 +15,13 @@
         <div class="header-inner d-flex justify-content-between align-items-center">
             <div class="logo">
                 <picture>
-                    <source srcset="img/Logo.webp">
+                    <source srcset="img/Logo.webp" type="image/webp">
                     <img src="img/Logo.png" alt="Logo da empresa" width="200" height="100" loading="eager" fetchpriority="high">
                 </picture>
             </div>
             <div class="banner">
                 <picture>
-                    <source srcset="img/Banner.webp">
+                    <source srcset="img/Banner.webp" type="image/webp">
                     <img src="img/Banner.png" alt="Banner principal" width="600" height="200" loading="eager" fetchpriority="high">
                 </picture>
             </div>
@@ -42,18 +42,18 @@
         <section id="sessao1">
             <h2 class="text-center">Bem-vindo à TechParts</h2>
             <picture class="img-principal">
-                <source srcset="img/componentes-grande.webp" media="(min-width:1025px)">
-                <source srcset="img/componentes-medio.webp" media="(min-width:601px)">
+                <source srcset="img/componentes-grande.webp" media="(min-width:1025px)" type="image/webp">
+                <source srcset="img/componentes-medio.webp" media="(min-width:601px)" type="image/webp">
                 <img src="img/componentes-pequeno.webp" alt="Imagem de componentes eletrônicos" width="800" height="400" loading="lazy">
             </picture>
             <p>A TechParts é a sua loja especializada em componentes eletrônicos...</p>
             <div class="boxImgs1 d-flex justify-content-center gap-3 flex-wrap">
                 <div>
-                    <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy">
+                    <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy" class="card-img">
                     <p>Placas Arduino para seus projetos</p>
                 </div>
                 <div>
-                    <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy">
+                    <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy" class="card-img">
                     <p>Protoboards para prototipagem rápida</p>
                 </div>
             </div>
@@ -64,45 +64,44 @@
 
         <section id="sessao2">
             <h2 class="text-center">Nossos Produtos</h2>
-
             <div class="galeria-produtos d-flex flex-wrap justify-content-center gap-3">
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <img src="img/Resistores.png?v=2" alt="Resistores" width="300" height="220" loading="lazy">
+                    <img src="img/Resistores.png?v=2" alt="Resistores" width="300" height="220" loading="lazy" class="card-img">
                     <p>Resistores diversos valores</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
-                    <img src="img/Capacitadores.png?v=2" alt="Capacitores" width="300" height="220" loading="lazy">
+                    <img src="img/Capacitadores.png?v=2" alt="Capacitores" width="300" height="220" loading="lazy" class="card-img">
                     <p>Capacitores variados</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
-                    <img src="img/Leds.png?v=2" alt="LEDs coloridos" width="300" height="220" loading="lazy">
+                    <img src="img/Leds.png?v=2" alt="LEDs coloridos" width="300" height="220" loading="lazy" class="card-img">
                     <p>LEDs coloridos</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
-                    <img src="img/Arduinos.png?v=2" alt="Arduinos" width="300" height="220" loading="lazy">
+                    <img src="img/Arduinos.png?v=2" alt="Arduinos" width="300" height="220" loading="lazy" class="card-img">
                     <p>Placas Arduino</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal5">
-                    <img src="img/Protoboards.png?v=2" alt="Protoboards" width="300" height="220" loading="lazy">
+                    <img src="img/Protoboards.png?v=2" alt="Protoboards" width="300" height="220" loading="lazy" class="card-img">
                     <p>Protoboards</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal6">
-                    <img src="img/Sensores.png?v=2" alt="Sensores" width="300" height="220" loading="lazy">
+                    <img src="img/Sensores.png?v=2" alt="Sensores" width="300" height="220" loading="lazy" class="card-img">
                     <p>Sensores diversos</p>
                 </div>
 
             </div>
-
+        
             <div class="text-center mt-2">
                 <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
             </div>
-
+        
             <div class="modal fade" id="modal1" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -111,7 +110,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="modal fade" id="modal2" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -120,7 +119,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="modal fade" id="modal3" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -129,7 +128,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="modal fade" id="modal4" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -138,7 +137,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="modal fade" id="modal5" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -147,7 +146,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="modal fade" id="modal6" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
@@ -198,33 +197,35 @@
             <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
         </section>
 
-        <section id="sessao5">
-            <h2 class="text-center">Extras</h2>
 
+
+       <section id="sessao5">
+            <h2 class="text-center">Extras</h2>
+        
             <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel" style="width: 55%; margin: 0 auto;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Capacitadores.png" class="d-block w-100" alt="Imagem de capacitores">
+                        <img src="img/Capacitadores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de capacitores" loading="eager" fetchpriority="high">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Leds.png" class="d-block w-100" alt="Imagem de LEDs">
+                        <img src="img/Leds.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de LEDs" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Resistores.png" class="d-block w-100" alt="Imagem de resistores">
+                        <img src="img/Resistores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de resistores" loading="lazy">
                     </div>
                 </div>
-
+        
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
-
+        
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
             </div>
-
+        
             <table class="table table-bordered table-striped text-center mt-4" style="width: 55%; margin: 0 auto;">
                 <thead>
                     <tr>
@@ -239,7 +240,7 @@
                     <tr><td>LEDs</td><td>Iluminação</td><td>R$ 0,20 – R$ 1,00</td></tr>
                 </tbody>
             </table>
-
+        
             <div class="text-center mt-2">
                 <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
             </div>
