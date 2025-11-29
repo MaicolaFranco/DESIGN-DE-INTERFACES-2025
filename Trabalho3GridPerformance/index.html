@@ -10,276 +10,287 @@
 </head>
 <body>
 
-    <header class="header" id="topo">
-        <div class="header-inner d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <picture>
-                    <source srcset="img/Logo.webp" type="image/webp">
-                    <img src="img/Logo.png" alt="Logo da empresa" width="200" height="100" loading="eager" fetchpriority="high">
-                </picture>
+<header class="header" id="topo">
+    <div class="header-inner d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <picture>
+                <source srcset="img/Logo.webp" type="image/webp">
+                <img src="img/Logo.png" alt="Logo da empresa" width="200" height="100" loading="eager" fetchpriority="high">
+            </picture>
+        </div>
+        <div class="banner">
+            <picture>
+                <source srcset="img/Banner.webp" type="image/webp">
+                <img src="img/Banner.png" alt="Banner principal" width="600" height="200" loading="eager" fetchpriority="high">
+            </picture>
+        </div>
+    </div>
+</header>
+
+<nav class="navigation">
+    <ul class="d-flex justify-content-center gap-3">
+        <li><a href="#sessao1">Home</a></li>
+        <li><a href="#sessao2">Produtos</a></li>
+        <li><a href="#sessao3">Formulário</a></li>
+        <li><a href="#sessao4">Painel</a></li>
+        <li><a href="#sessao5">Extras</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="sessao1">
+    <h2 class="text-center">Bem-vindo à TechParts</h2>
+    <picture class="img-principal">
+        <source srcset="img/componentes-grande.webp" media="(min-width:1025px)" type="image/webp">
+        <source srcset="img/componentes-medio.webp" media="(min-width:601px)" type="image/webp">
+        <img src="img/componentes-pequeno.webp" alt="Imagem de componentes eletrônicos" width="800" height="400" loading="lazy">
+    </picture>
+
+    <p>A TechParts é a sua loja especializada em componentes eletrônicos...</p>
+
+    <div class="boxImgs1 d-flex justify-content-center gap-3 flex-wrap">
+        <div>
+            <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy" class="card-img">
+            <p>Placas Arduino para seus projetos</p>
+        </div>
+        <div>
+            <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy" class="card-img">
+            <p>Protoboards para prototipagem rápida</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-2">
+        <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+    </div>
+</section>
+
+<section id="sessao2">
+    <h2 class="text-center">Nossos Produtos</h2>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="img/Resistores.png?v=3" class="card-img-top" alt="Resistores" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>Resistores diversos valores</p>
+                    </div>
+                </div>
             </div>
-            <div class="banner">
-                <picture>
-                    <source srcset="img/Banner.webp" type="image/webp">
-                    <img src="img/Banner.png" alt="Banner principal" width="600" height="200" loading="eager" fetchpriority="high">
-                </picture>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img src="img/Capacitadores.png?v=3" class="card-img-top" alt="Capacitores" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>Capacitores variados</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <img src="img/Leds.png?v=3" class="card-img-top" alt="LEDs coloridos" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>LEDs coloridos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <img src="img/Arduinos.png?v=3" class="card-img-top" alt="Arduinos" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>Placas Arduino</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <img src="img/Protoboards.png?v=3" class="card-img-top" alt="Protoboards" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>Protoboards</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal6">
+                    <img src="img/Sensores.png?v=3" class="card-img-top" alt="Sensores" width="300" height="220" loading="lazy">
+                    <div class="card-body text-center">
+                        <p>Sensores diversos</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Resistores.png?v=3" class="w-100" alt="Imagem ampliada de resistores">
+                <div class="p-3"><p>Resistores usados para limitar corrente elétrica.</p></div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <nav class="navigation">
-        <ul class="d-flex justify-content-center gap-3">
-            <li><a href="#sessao1">Home</a></li>
-            <li><a href="#sessao2">Produtos</a></li>
-            <li><a href="#sessao3">Formulário</a></li>
-            <li><a href="#sessao4">Painel</a></li>
-            <li><a href="#sessao5">Extras</a></li>
-        </ul>
-    </nav>
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Capacitadores.png?v=3" class="w-100" alt="Imagem ampliada de capacitores">
+                <div class="p-3"><p>Capacitores para filtragem e acoplamento.</p></div>
+            </div>
+        </div>
+    </div>
 
-    <main>
-        <section id="sessao1">
-            <h2 class="text-center">Bem-vindo à TechParts</h2>
-            <picture class="img-principal">
-                <source srcset="img/componentes-grande.webp" media="(min-width:1025px)" type="image/webp">
-                <source srcset="img/componentes-medio.webp" media="(min-width:601px)" type="image/webp">
-                <img src="img/componentes-pequeno.webp" alt="Imagem de componentes eletrônicos" width="800" height="400" loading="lazy">
-            </picture>
-            <p>A TechParts é a sua loja especializada em componentes eletrônicos...</p>
-            <div class="boxImgs1 d-flex justify-content-center gap-3 flex-wrap">
-                <div>
-                    <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy" class="card-img">
-                    <p>Placas Arduino para seus projetos</p>
-                </div>
-                <div>
-                    <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy" class="card-img">
-                    <p>Protoboards para prototipagem rápida</p>
-                </div>
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Leds.png?v=3" class="w-100" alt="Imagem ampliada de LEDs">
+                <div class="p-3"><p>LEDs variados para projetos eletrônicos.</p></div>
             </div>
-            <div class="text-center mt-2">
-                <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
-            </div>
-        </section>
+        </div>
+    </div>
 
-        <section id="sessao2">
-            <h2 class="text-center">Nossos Produtos</h2>
-        
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal1">
-                            <img src="img/Resistores.png?v=3" class="card-img-top" alt="Resistores" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>Resistores diversos valores</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal2">
-                            <img src="img/Capacitadores.png?v=3" class="card-img-top" alt="Capacitores" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>Capacitores variados</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal3">
-                            <img src="img/Leds.png?v=3" class="card-img-top" alt="LEDs coloridos" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>LEDs coloridos</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal4">
-                            <img src="img/Arduinos.png?v=3" class="card-img-top" alt="Arduinos" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>Placas Arduino</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal5">
-                            <img src="img/Protoboards.png?v=3" class="card-img-top" alt="Protoboards" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>Protoboards</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal6">
-                            <img src="img/Sensores.png?v=3" class="card-img-top" alt="Sensores" width="300" height="220" loading="lazy">
-                            <div class="card-body text-center">
-                                <p>Sensores diversos</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
+    <div class="modal fade" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Arduinos.png?v=3" class="w-100" alt="Imagem ampliada de Arduinos">
+                <div class="p-3"><p>Placas Arduino para prototipagem.</p></div>
             </div>
-        
-            <div class="text-center mt-3">
-                <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
-            </div>
-        
-            <div class="modal fade" id="modal1" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Resistores.png?v=3" class="w-100" alt="Imagem ampliada de resistores">
-                        <div class="p-3"><p>Resistores usados para limitar corrente elétrica em circuitos...</p></div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade" id="modal2" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Capacitadores.png?v=3" class="w-100" alt="Imagem ampliada de capacitores">
-                        <div class="p-3"><p>Capacitores para filtragem e acoplamento de sinais.</p></div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade" id="modal3" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Leds.png?v=3" class="w-100" alt="Imagem ampliada de LEDs">
-                        <div class="p-3"><p>LEDs variados para projetos eletrônicos.</p></div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade" id="modal4" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Arduinos.png?v=3" class="w-100" alt="Imagem ampliada de Arduinos">
-                        <div class="p-3"><p>Placas Arduino para prototipagem rápida.</p></div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade" id="modal5" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Protoboards.png?v=3" class="w-100" alt="Imagem ampliada de Protoboards">
-                        <div class="p-3"><p>Protoboards para desenvolvimento de circuitos.</p></div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="modal fade" id="modal6" tabindex="-1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="img/Sensores.png?v=3" class="w-100" alt="Imagem ampliada de Sensores">
-                        <div class="p-3"><p>Sensores diversos para seus projetos.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
 
-
-
-        <section id="sessao3" class="formulario-section">
-            <h2 class="text-center">Entre em Contato</h2>
-            <div class="grid-form d-flex flex-wrap justify-content-center gap-3">
-                <div class="img-formulario" aria-hidden="true"></div>
-                <form>
-                    <fieldset>
-                        <legend>Preencha suas informações</legend>
-                        <label for="nome">Nome:</label>
-                        <input id="nome" type="text" required>
-                        <label for="email">E-mail:</label>
-                        <input id="email" type="email" required>
-                        <label for="numero">Número:</label>
-                        <input id="numero" type="tel" required>
-                        <label for="endereco">Endereço:</label>
-                        <input id="endereco" type="text" required>
-                        <label for="idade">Idade:</label>
-                        <input id="idade" type="number" required>
-                        <button class="btn-enviar mt-2" type="submit">Enviar</button>
-                    </fieldset>
-                </form>
+    <div class="modal fade" id="modal5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Protoboards.png?v=3" class="w-100" alt="Imagem ampliada de Protoboards">
+                <div class="p-3"><p>Protoboards para montagem de circuitos.</p></div>
             </div>
-            <div class="text-center mt-2">
-                <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="img/Sensores.png?v=3" class="w-100" alt="Imagem ampliada de Sensores">
+                <div class="p-3"><p>Sensores diversos.</p></div>
             </div>
-        </section>
-        
-        <section id="sessao4">
-            <h2 class="text-center">Painel de Componentes</h2>
-            <div class="grid">
-                <img src="img/componentes1.webp" alt="Componente 1" class="foto foto1">
-                <img src="img/componentes2.webp" alt="Componente 2" class="foto foto2">
-                <img src="img/componentes3.webp" alt="Componente 3" class="foto foto3">
-                <img src="img/componentes4.webp" alt="Componente 4" class="foto foto4">
-                <img src="img/componentes5.webp" alt="Componente 5" class="foto foto5">
-                <img src="img/componentes6.webp" alt="Componente 6" class="foto foto6">
+        </div>
+    </div>
+</section>
+
+<section id="sessao3" class="formulario-section">
+    <h2 class="text-center">Entre em Contato</h2>
+
+    <div class="grid-form d-flex flex-wrap justify-content-center gap-3">
+        <div class="img-formulario" aria-hidden="true"></div>
+
+        <form>
+            <fieldset>
+                <legend>Preencha suas informações</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" required>
+
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" required>
+
+                <label for="numero">Número:</label>
+                <input id="numero" type="tel" required>
+
+                <label for="endereco">Endereço:</label>
+                <input id="endereco" type="text" required>
+
+                <label for="idade">Idade:</label>
+                <input id="idade" type="number" required>
+
+                <button class="btn-enviar mt-2" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="text-center mt-2">
+        <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+    </div>
+</section>
+
+<section id="sessao4">
+    <h2 class="text-center">Painel de Componentes</h2>
+
+    <div class="grid">
+        <img src="img/componentes1.webp" alt="Componente 1" class="foto foto1">
+        <img src="img/componentes2.webp" alt="Componente 2" class="foto foto2">
+        <img src="img/componentes3.webp" alt="Componente 3" class="foto foto3">
+        <img src="img/componentes4.webp" alt="Componente 4" class="foto foto4">
+        <img src="img/componentes5.webp" alt="Componente 5" class="foto foto5">
+        <img src="img/componentes6.webp" alt="Componente 6" class="foto foto6">
+    </div>
+
+    <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+</section>
+
+<section id="sessao5">
+    <h2 class="text-center">Extras</h2>
+
+    <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel" style="width: 55%; margin: 0 auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Capacitadores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de capacitores" loading="eager" fetchpriority="high">
             </div>
-            <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
-        </section>
-
-
-
-       <section id="sessao5">
-            <h2 class="text-center">Extras</h2>
-        
-            <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel" style="width: 55%; margin: 0 auto;">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/Capacitadores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de capacitores" loading="eager" fetchpriority="high">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Leds.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de LEDs" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Resistores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de resistores" loading="lazy">
-                    </div>
-                </div>
-        
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-        
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+            <div class="carousel-item">
+                <img src="img/Leds.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de LEDs" loading="lazy">
             </div>
-        
-            <table class="table table-bordered table-striped text-center mt-4" style="width: 55%; margin: 0 auto;">
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Categoria</th>
-                        <th>Preço Médio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Resistores</td><td>Eletrônica</td><td>R$ 0,10 – R$ 0,50</td></tr>
-                    <tr><td>Capacitores</td><td>Eletrônica</td><td>R$ 0,50 – R$ 2,00</td></tr>
-                    <tr><td>LEDs</td><td>Iluminação</td><td>R$ 0,20 – R$ 1,00</td></tr>
-                </tbody>
-            </table>
-        
-            <div class="text-center mt-2">
-                <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+            <div class="carousel-item">
+                <img src="img/Resistores.png?v=2" class="d-block w-100 carousel-img" alt="Imagem de resistores" loading="lazy">
             </div>
-        </section>
+        </div>
 
-    </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
 
-    <footer class="footer text-center mt-4">
-        <p>&copy; 2025 TechParts — Todos os direitos reservados</p>
-        <p>Email: <a href="mailto:contato@techparts.com">contato@techparts.com</a></p>
-    </footer>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <table class="table table-bordered table-striped text-center mt-4" style="width: 55%; margin: 0 auto;">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço Médio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Resistores</td><td>Eletrônica</td><td>R$ 0,10 – R$ 0,50</td></tr>
+            <tr><td>Capacitores</td><td>Eletrônica</td><td>R$ 0,50 – R$ 2,00</td></tr>
+            <tr><td>LEDs</td><td>Iluminação</td><td>R$ 0,20 – R$ 1,00</td></tr>
+        </tbody>
+    </table>
+
+    <div class="text-center mt-2">
+        <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer text-center mt-4">
+    <p>&copy; 2025 TechParts — Todos os direitos reservados</p>
+    <p>Email: <a href="mailto:contato@techparts.com">contato@techparts.com</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
