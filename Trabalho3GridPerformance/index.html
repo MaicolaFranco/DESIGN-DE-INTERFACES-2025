@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
     <title>TechParts</title>
 </head>
 <body>
     <a id="topo"></a>
 
-    <header class="header">
-        <div class="header-inner">
-            <picture>
-                <source srcset="img/Logo.webp" type="image/webp">
-                <img src="img/Logo.png" alt="Logo da empresa" width="200" height="100" loading="eager">
-            </picture>
-
-            <picture>
-                <source srcset="img/Banner.webp" type="image/webp">
-                <img src="img/Banner.png" alt="Banner principal" width="600" height="200" loading="eager">
-            </picture>
+    <header class="header" id="topo">
+        <div class="header-inner d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <picture>
+                    <source srcset="img/Logo.webp">
+                    <img src="img/Logo.png" alt="Logo da empresa" width="200" height="100" loading="eager" fetchpriority="high">
+                </picture>
+            </div>
+            <div class="banner">
+                <picture>
+                    <source srcset="img/Banner.webp">
+                    <img src="img/Banner.png" alt="Banner principal" width="600" height="200" loading="eager" fetchpriority="high">
+                </picture>
+            </div>
         </div>
     </header>
 
     <nav class="navigation">
-        <ul>
+        <ul class="d-flex justify-content-center gap-3">
             <li><a href="#sessao1">Home</a></li>
             <li><a href="#sessao2">Produtos</a></li>
             <li><a href="#sessao3">Formulário</a></li>
@@ -38,36 +39,24 @@
     </nav>
 
     <main>
-
         <section id="sessao1">
             <h2 class="text-center">Bem-vindo à TechParts</h2>
-
             <picture class="img-principal">
-                <source srcset="img/componentes-grande.webp" media="(min-width:1025px)" type="image/webp">
-                <source srcset="img/componentes-medio.webp" media="(min-width:601px)" type="image/webp">
+                <source srcset="img/componentes-grande.webp" media="(min-width:1025px)">
+                <source srcset="img/componentes-medio.webp" media="(min-width:601px)">
                 <img src="img/componentes-pequeno.webp" alt="Imagem de componentes eletrônicos" width="800" height="400" loading="lazy">
             </picture>
-
             <p>A TechParts é a sua loja especializada em componentes eletrônicos...</p>
-
-            <div class="boxImgs1">
+            <div class="boxImgs1 d-flex justify-content-center gap-3 flex-wrap">
                 <div>
-                    <picture>
-                        <source srcset="img/ArduinoSessao1.webp" type="image/webp">
-                        <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy">
-                    </picture>
+                    <img src="img/ArduinoSessao1.png" alt="Imagem de Arduino" width="300" height="200" loading="lazy">
                     <p>Placas Arduino para seus projetos</p>
                 </div>
-
                 <div>
-                    <picture>
-                        <source srcset="img/ProtoboardSessao1.webp" type="image/webp">
-                        <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy">
-                    </picture>
+                    <img src="img/ProtoboardSessao1.png" alt="Protoboard" width="300" height="200" loading="lazy">
                     <p>Protoboards para prototipagem rápida</p>
                 </div>
             </div>
-
             <div class="text-center mt-2">
                 <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
             </div>
@@ -76,54 +65,38 @@
         <section id="sessao2">
             <h2 class="text-center">Nossos Produtos</h2>
 
-            <div class="galeria-produtos">
+            <div class="galeria-produtos d-flex flex-wrap justify-content-center gap-3">
+
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <picture>
-                        <source srcset="img/Resistores.webp" type="image/webp">
-                        <img src="img/Resistores.png" alt="Resistores" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Resistores.png?v=2" alt="Resistores" width="300" height="220" loading="lazy">
                     <p>Resistores diversos valores</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
-                    <picture>
-                        <source srcset="img/Capacitadores.webp" type="image/webp">
-                        <img src="img/Capacitadores.png" alt="Capacitores" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Capacitadores.png?v=2" alt="Capacitores" width="300" height="220" loading="lazy">
                     <p>Capacitores variados</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
-                    <picture>
-                        <source srcset="img/Leds.webp" type="image/webp">
-                        <img src="img/Leds.png" alt="LEDs coloridos" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Leds.png?v=2" alt="LEDs coloridos" width="300" height="220" loading="lazy">
                     <p>LEDs coloridos</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
-                    <picture>
-                        <source srcset="img/Arduinos.webp" type="image/webp">
-                        <img src="img/Arduinos.png" alt="Arduinos" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Arduinos.png?v=2" alt="Arduinos" width="300" height="220" loading="lazy">
                     <p>Placas Arduino</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal5">
-                    <picture>
-                        <source srcset="img/Protoboards.webp" type="image/webp">
-                        <img src="img/Protoboards.png" alt="Protoboards" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Protoboards.png?v=2" alt="Protoboards" width="300" height="220" loading="lazy">
                     <p>Protoboards</p>
                 </div>
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modal6">
-                    <picture>
-                        <source srcset="img/Sensores.webp" type="image/webp">
-                        <img src="img/Sensores.png" alt="Sensores" width="300" height="220" loading="lazy">
-                    </picture>
+                    <img src="img/Sensores.png?v=2" alt="Sensores" width="300" height="220" loading="lazy">
                     <p>Sensores diversos</p>
                 </div>
+
             </div>
 
             <div class="text-center mt-2">
@@ -133,11 +106,8 @@
             <div class="modal fade" id="modal1" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Resistores.webp" type="image/webp">
-                            <img src="img/Resistores.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>Resistores usados para limitar corrente elétrica...</p></div>
+                        <img src="img/Resistores.png?v=2" class="w-100" alt="Imagem ampliada de resistores">
+                        <div class="p-3"><p>Resistores usados para limitar corrente elétrica em circuitos...</p></div>
                     </div>
                 </div>
             </div>
@@ -145,11 +115,8 @@
             <div class="modal fade" id="modal2" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Capacitadores.webp" type="image/webp">
-                            <img src="img/Capacitadores.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>Capacitores para filtragem e armazenamento...</p></div>
+                        <img src="img/Capacitadores.png?v=2" class="w-100" alt="Imagem ampliada de capacitores">
+                        <div class="p-3"><p>Capacitores para filtragem, armazenamento de energia e acoplamento de sinais.</p></div>
                     </div>
                 </div>
             </div>
@@ -157,11 +124,8 @@
             <div class="modal fade" id="modal3" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Leds.webp" type="image/webp">
-                            <img src="img/Leds.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>LEDs variados para projetos.</p></div>
+                        <img src="img/Leds.png?v=2" class="w-100" alt="Imagem ampliada de LEDs">
+                        <div class="p-3"><p>LEDs variados, de diversas cores e intensidades para projetos eletrônicos.</p></div>
                     </div>
                 </div>
             </div>
@@ -169,11 +133,8 @@
             <div class="modal fade" id="modal4" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Arduinos.webp" type="image/webp">
-                            <img src="img/Arduinos.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>Placas Arduino completas.</p></div>
+                        <img src="img/Arduinos.png?v=2" class="w-100" alt="Imagem ampliada de Arduinos">
+                        <div class="p-3"><p>Placas Arduino para seus projetos e prototipagem rápida.</p></div>
                     </div>
                 </div>
             </div>
@@ -181,11 +142,8 @@
             <div class="modal fade" id="modal5" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Protoboards.webp" type="image/webp">
-                            <img src="img/Protoboards.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>Protoboards para experimentos.</p></div>
+                        <img src="img/Protoboards.png?v=2" class="w-100" alt="Imagem ampliada de Protoboards">
+                        <div class="p-3"><p>Protoboards para testes rápidos e desenvolvimento de circuitos.</p></div>
                     </div>
                 </div>
             </div>
@@ -193,46 +151,35 @@
             <div class="modal fade" id="modal6" tabindex="-1">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                        <picture>
-                            <source srcset="img/Sensores.webp" type="image/webp">
-                            <img src="img/Sensores.png" class="w-100" alt="">
-                        </picture>
-                        <div class="p-3"><p>Sensores para medições diversas.</p></div>
+                        <img src="img/Sensores.png?v=2" class="w-100" alt="Imagem ampliada de Sensores">
+                        <div class="p-3"><p>Sensores diversos para medir temperatura, distância, luz e outros parâmetros.</p></div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section id="sessao3" class="formulario-section">
             <h2 class="text-center">Entre em Contato</h2>
-
-            <div class="grid-form">
-                <div class="img-formulario"></div>
-
+            <div class="grid-form d-flex flex-wrap justify-content-center gap-3">
+                <div class="img-formulario" aria-hidden="true"></div>
                 <form>
                     <fieldset>
                         <legend>Preencha suas informações</legend>
-
                         <label for="nome">Nome:</label>
                         <input id="nome" type="text" required>
-
                         <label for="email">E-mail:</label>
                         <input id="email" type="email" required>
-
                         <label for="numero">Número:</label>
                         <input id="numero" type="tel" required>
-
                         <label for="endereco">Endereço:</label>
                         <input id="endereco" type="text" required>
-
                         <label for="idade">Idade:</label>
                         <input id="idade" type="number" required>
-
                         <button class="btn-enviar mt-2" type="submit">Enviar</button>
                     </fieldset>
                 </form>
             </div>
-
             <div class="text-center mt-2">
                 <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
             </div>
@@ -240,48 +187,31 @@
 
         <section id="sessao4">
             <h2 class="text-center">Painel de Componentes</h2>
-
             <div class="grid">
-                <img src="img/componentes1.webp" alt="Componente 1" class="foto">
-                <img src="img/componentes2.webp" alt="Componente 2" class="foto">
-                <img src="img/componentes3.webp" alt="Componente 3" class="foto">
-                <img src="img/componentes4.webp" alt="Componente 4" class="foto">
-                <img src="img/componentes5.webp" alt="Componente 5" class="foto">
-                <img src="img/componentes6.webp" alt="Componente 6" class="foto">
+                <img src="img/componentes1.webp" alt="Componente 1" class="foto foto1">
+                <img src="img/componentes2.webp" alt="Componente 2" class="foto foto2">
+                <img src="img/componentes3.webp" alt="Componente 3" class="foto foto3">
+                <img src="img/componentes4.webp" alt="Componente 4" class="foto foto4">
+                <img src="img/componentes5.webp" alt="Componente 5" class="foto foto5">
+                <img src="img/componentes6.webp" alt="Componente 6" class="foto foto6">
             </div>
-
-            <div class="text-center mt-2">
-                <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
-            </div>
+            <a href="#topo" class="text-primary text-decoration-none">Voltar ao topo</a>
         </section>
 
         <section id="sessao5">
             <h2 class="text-center">Extras</h2>
 
-            <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel" style="width: 55%; margin: 0 auto;">
                 <div class="carousel-inner">
-
                     <div class="carousel-item active">
-                        <picture>
-                            <source srcset="img/Capacitadores.webp" type="image/webp">
-                            <img src="img/Capacitadores.png" class="d-block w-100" alt="">
-                        </picture>
+                        <img src="img/Capacitadores.png" class="d-block w-100" alt="Imagem de capacitores">
                     </div>
-
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="img/Leds.webp" type="image/webp">
-                            <img src="img/Leds.png" class="d-block w-100" alt="">
-                        </picture>
+                        <img src="img/Leds.png" class="d-block w-100" alt="Imagem de LEDs">
                     </div>
-
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="img/Resistores.webp" type="image/webp">
-                            <img src="img/Resistores.png" class="d-block w-100" alt="">
-                        </picture>
+                        <img src="img/Resistores.png" class="d-block w-100" alt="Imagem de resistores">
                     </div>
-
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
@@ -295,7 +225,7 @@
                 </button>
             </div>
 
-            <table class="table table-bordered table-striped text-center mt-4 tabela-extras">
+            <table class="table table-bordered table-striped text-center mt-4" style="width: 55%; margin: 0 auto;">
                 <thead>
                     <tr>
                         <th>Produto</th>
@@ -317,11 +247,11 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer text-center mt-4">
         <p>&copy; 2025 TechParts — Todos os direitos reservados</p>
         <p>Email: <a href="mailto:contato@techparts.com">contato@techparts.com</a></p>
     </footer>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
