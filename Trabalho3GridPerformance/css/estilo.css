@@ -81,6 +81,7 @@ section p, section h2 {
   object-fit: cover;
   border-radius: 15px;
 }
+
 .boxImgs1 {
     display: flex;
     justify-content: center;
@@ -196,6 +197,13 @@ form input {
 .foto4 { background-image: url("../img/componentes4.webp"); grid-row: span 2; }
 .foto5 { background-image: url("../img/componentes5.webp"); }
 .foto6 { background-image: url("../img/componentes6.webp"); }
+
+/* Sessão 5 — Carousel */
+#carouselProdutos .carousel-item img {
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 /* Footer */
 .footer {
