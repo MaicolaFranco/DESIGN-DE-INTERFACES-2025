@@ -220,27 +220,44 @@ form input {
    SESSÃO 4 – MOSAICO 
 =========================== */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
-  grid-auto-flow: dense;
-  gap: 10px;
-  width: 90%;
-  max-width: 1000px;
-}
-.foto {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    gap: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.foto1 { background-image: url("/img/componentes1.webp"); grid-row: span 2; }
-.foto2 { background-image: url("/img/componentes2.webp"); }
-.foto3 { background-image: url("/img/componentes3.webp"); grid-row: span 2; }
-.foto4 { background-image: url("/img/componentes4.webp"); grid-row: span 2; }
-.foto5 { background-image: url("/img/componentes5.webp"); }
-.foto6 { background-image: url("/img/componentes6.webp"); }
+.foto {
+    width: 100%;
+    height: 100%;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Definição do span das fotos grandes */
+.foto1, .foto3, .foto4 {
+    grid-row: span 2;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 150px;
+    }
+    .foto1, .foto3, .foto4 {
+        grid-row: span 1;
+    }
+}
 
 
 /* ===========================
