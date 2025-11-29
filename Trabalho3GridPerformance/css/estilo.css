@@ -208,20 +208,19 @@ form input {
 
 .foto {
     width: 100%;
-    height: 100%;
     display: block;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100px;
+    min-height: 200px; /* garante altura mínima visível */
 }
 
-.foto1 { background-image: url("/img/componentes1.webp"); grid-row: span 2; }
-.foto2 { background-image: url("/img/componentes2.webp"); }
-.foto3 { background-image: url("/img/componentes3.webp"); grid-row: span 2; }
-.foto4 { background-image: url("/img/componentes4.webp"); grid-row: span 2; }
-.foto5 { background-image: url("/img/componentes5.webp"); }
-.foto6 { background-image: url("/img/componentes6.webp"); }
+.foto1 { background-image: url("img/componentes1.webp"); grid-row: span 2; }
+.foto2 { background-image: url("img/componentes2.webp"); }
+.foto3 { background-image: url("img/componentes3.webp"); grid-row: span 2; }
+.foto4 { background-image: url("img/componentes4.webp"); grid-row: span 2; }
+.foto5 { background-image: url("img/componentes5.webp"); }
+.foto6 { background-image: url("img/componentes6.webp"); }
 
 #carouselProdutos {
     width: 100%;
