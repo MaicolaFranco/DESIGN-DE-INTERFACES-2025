@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Cartões</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Interface Web</h1>
+</header>
+
+<nav>
+  <a href="index.html">Apresentação</a>
+  <a href="editor.html">Editor de Cartões</a>
+  <a href="#">Trabalho 2</a>
+  <a href="#">Trabalho 3</a>
+</nav>
+
+<main class="container-flex">
+
+
+  <section class="formulario">
+    <h2>Editor de Cartão</h2>
+
+    <label for="texto">Mensagem:</label>
+    <input type="text" id="texto" maxlength="50">
+
+    <label for="corTexto">Cor do texto:</label>
+    <input type="color" id="corTexto">
+
+    <label for="corFundo">Cor do fundo:</label>
+    <input type="color" id="corFundo">
+
+    <label for="tamanho">Tamanho do texto:</label>
+    <input type="range" id="tamanho" min="12" max="40">
+
+    <label for="imagem">Selecionar imagem:</label>
+    <input type="file" id="imagem" accept="image/*">
+
+    <button type="button" id="adicionarElemento">Adicionar Caixa</button>
+  </section>
+
+
+  <section class="cartao-area">
+    <div id="cartao">
+      <p id="mensagem">Seu cartão aqui</p>
+      <img id="imgCartao" src="img/imgPdrao.jpg" alt="Imagem do cartão">
+      <div id="extras"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 - Interface Web</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

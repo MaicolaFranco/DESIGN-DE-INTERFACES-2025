@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef2f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  color: #333;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+}
+
+.container-coluna,
+.container-flex {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container-coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 15px;
+  text-align: center;
+}
+
+.container-coluna img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container-flex {
+  display: flex;
+  gap: 25px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+}
+
+.formulario label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.formulario input,
+.formulario button {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.formulario input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.formulario button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #357abd;
+}
+
+.cartao-area {
+  flex: 1;
+  display: flex;
+}
+
+#cartao {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#cartao:hover {
+  transform: scale(1.02);
+}
+
+#cartao img {
+  max-width: 200%;
+  max-height: 1000px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#mensagem {
+  font-size: 18px;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.extra-box {
+  background: #f0f4ff;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container-flex {
+    flex-direction: column;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+}
