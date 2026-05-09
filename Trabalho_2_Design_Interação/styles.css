@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f4ff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 750px;
+  align-self: center;
+  padding: 30px 20px;
+}
+
+main.container-coluna h2 {
+  font-size: 1.4rem;
+  color: #357abd;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+main.container-coluna p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+main.container-coluna img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(74, 144, 226, 0.15);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 14px;
+  }
+}

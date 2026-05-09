@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slots | Interface Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<meu-header></meu-header>
+<meu-nav></meu-nav>
+
+<main class="container-coluna">
+
+  <minha-lista titulo="Grandezas Elétricas">
+    <p slot="item">Tensão elétrica — medida em Volts (V)</p>
+    <p slot="item">Corrente elétrica — medida em Amperes (A)</p>
+    <p slot="item">Resistência elétrica — medida em Ohms (Ω)</p>
+    <p slot="item">Potência elétrica — medida em Watts (W)</p>
+  </minha-lista>
+
+  <minha-lista titulo="Instrumentos de Medição">
+    <p slot="item">Voltímetro — mede tensão elétrica</p>
+    <p slot="item">Amperímetro — mede corrente elétrica</p>
+    <p slot="item">Ohmímetro — mede resistência elétrica</p>
+  </minha-lista>
+
+</main>
+
+<meu-footer></meu-footer>
+
+<script src="script/components.js"></script>
+<script src="script/slots.js"></script>
+</body>
+</html>
